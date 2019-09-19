@@ -27,6 +27,9 @@ export interface AddressEntry {
 export interface Contact {
     recordId: string,
     name: string,
+    givenName?: string,
+    familyName?: string,
+    middleName?: string,
     phones: PhoneEntry[],
     emails: EmailEntry[],
     postalAddresses: AddressEntry[]
