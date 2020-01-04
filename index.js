@@ -16,6 +16,10 @@ const ActionSheet = Platform.select({
 let currentlyOpen = false;
 
 const SelectContactApi = {
+    closeContactPhone() {
+        currentlyOpen = false;
+        return SelectContactApi.selectContactPhone();
+    },
 
     selectContact() {
         if (currentlyOpen) {
